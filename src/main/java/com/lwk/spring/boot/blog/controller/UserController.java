@@ -1,10 +1,16 @@
-package com.waylau.spring.boot.blog.controller;
+package com.lwk.spring.boot.blog.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.ConstraintViolationException;
 
+import com.lwk.spring.boot.blog.domain.Authority;
+import com.lwk.spring.boot.blog.domain.User;
+import com.lwk.spring.boot.blog.service.AuthorityService;
+import com.lwk.spring.boot.blog.service.UserService;
+import com.lwk.spring.boot.blog.util.ConstraintViolationExceptionHandler;
+import com.lwk.spring.boot.blog.vo.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -23,12 +29,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.waylau.spring.boot.blog.domain.Authority;
-import com.waylau.spring.boot.blog.domain.User;
-import com.waylau.spring.boot.blog.service.AuthorityService;
-import com.waylau.spring.boot.blog.service.UserService;
-import com.waylau.spring.boot.blog.util.ConstraintViolationExceptionHandler;
-import com.waylau.spring.boot.blog.vo.Response;
+
  
 
 /**
@@ -46,7 +47,7 @@ public class UserController {
 	private UserService userService;
 	
 	@Autowired
-	private AuthorityService  authorityService;
+	private AuthorityService authorityService;
 
 	/**
 	 * 查询所用用户
