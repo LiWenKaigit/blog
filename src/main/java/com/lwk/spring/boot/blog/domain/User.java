@@ -1,4 +1,4 @@
-package com.waylau.spring.boot.blog.domain;
+package com.lwk.spring.boot.blog.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -17,7 +17,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.Size;
 
-import com.lwk.spring.boot.blog.domain.Authority;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.security.core.GrantedAuthority;
