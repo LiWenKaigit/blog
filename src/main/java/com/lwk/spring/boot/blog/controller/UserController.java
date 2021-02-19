@@ -32,11 +32,12 @@ import com.lwk.spring.boot.blog.vo.Response;
  
 
 /**
- * 用户控制器.
- * 
- * @author <a href="https://waylau.com">Way Lau</a>
- * @date 2017年2月26日
- */
+ * @Author lwk
+ * @Description //用户控制器
+ * @Date  2021/2/19
+ * @Param
+ * @return
+**/
 @RestController
 @RequestMapping("/users")
 @PreAuthorize("hasAuthority('ROLE_ADMIN')")  // 指定角色权限才能操作方法
